@@ -18,7 +18,7 @@ El operador `by` se usa junto con el delegado de propiedad en Kotlin. En este ca
 var products by remember { mutableStateOf(getFakeProducts()) }
 ```
 
-### ¿Qué hace by aquí?
+### ¿Qué hace ``by`` aquí?
  - Internamente, ``mutableStateOf`` devuelve un objeto que implementa ``State<T>``, y el operador ``by`` delega el comportamiento para que puedas acceder directamente al valor encapsulado en el estado como si fuera una variable normal.
  - Sin ``by``, necesitarías escribir explícitamente ``products.value`` para leer el estado o ``products.value = ...`` para modificarlo.
 
@@ -46,7 +46,7 @@ En el caso de ``mutableStateListOf``, no usas ``by`` porque ``mutableStateListOf
 val products = remember { mutableStateListOf(*getFakeProducts().toTypedArray()) }
 ```
 
-### ¿Qué hace by aquí?
+### ¿Qué hace ``=`` aquí?
  - ``mutableStateListOf`` devuelve una lista observable que puede mutar directamente, por lo que puedes interactuar con la lista (añadir, eliminar, modificar elementos) sin necesidad de usar ``.value`` o delegar su comportamiento.
  - No hay necesidad de delegar la propiedad porque ya estás trabajando con la lista mutable directamente.
 
