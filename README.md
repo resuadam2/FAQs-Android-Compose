@@ -227,4 +227,4 @@ fun ShoppingListScreen(viewModel: ShoppingListViewModel = viewModel()) {
    - Úsalo si trabajas con listas que cambian frecuentemente y quieres manejar los cambios directamente.
    - Es más eficiente y adecuado para listas grandes o con actualizaciones frecuentes.
 
-En general, si el manejo directo de la lista no es un problema para tu caso de uso, mutableStateListOf en el ViewModel es más eficiente y fácil de usar. Sin embargo, si prefieres trabajar con inmutabilidad por razones de **diseño o consistencia**, mutableStateOf con reasignaciones de lista es mejor. 😊
+En general, si el manejo directo de la lista no es un problema para tu caso de uso, ``mutableStateListOf`` en el ViewModel es más eficiente y fácil de usar. Sin embargo, si prefieres trabajar con **inmutabilidad** por razones de **diseño o consistencia**, ``mutableStateOf`` con reasignaciones de lista es mejor. 😊
