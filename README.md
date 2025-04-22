@@ -188,7 +188,7 @@ ___
 
 | Aspecto                      | **``by`` con `mutableStateOf`**                    | **``=`` con `mutableStateListOf`**              |
 |-------------------------------|------------------------------------------|---------------------------------------|
-| **Delefación**               | Usa delegación con el operador ``by``.	    | No hay delegación, interactúas directamente. |
+| **Delegación**               | Usa delegación con el operador ``by``.	    | No hay delegación, interactúas directamente. |
 | **Acceso al estado**               | Accedes directamente al valor sin ``.value``.	    | Accedes directamente porque es una lista mutable. |
 | **Modificación**               | Reasignas toda la lista (``products = ...``).	    |Modificas la lista directamente (``products.add(...)``). |
 | **Simplicidad sintáctica**               | Mas limpio para trabajar con ``mutableStateOf``.	    |Más directo para manejar cambios internos en listas. |
